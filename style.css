@@ -177,7 +177,7 @@ input, textarea, select
     z-index: 1;
 }
 
-.header-logo .logo {
+.header-logo img.logo {
     width: 110px;
     height: 110px;
     border-radius: 50%;
@@ -465,7 +465,7 @@ ul.slides li img
 
 .blog-item-holder.no-background-image
 {
-    background-color: #2B3344;
+    background-color: #568A7D;
 }
 
 .blog-item-holder .entry-content:before
