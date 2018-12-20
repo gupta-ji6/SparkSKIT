@@ -10,7 +10,7 @@ body
     font-size: 20px; 	
     line-height: 35px;
     font-weight: 400;	
-    color: #0D1529;
+    color: #568A7D;
     height: 100%;
 }
 
@@ -38,7 +38,11 @@ input, textarea, select
     width: 100%;
     height: 100%;
     z-index: 99999;	
-    background-color: white;
+    background-color: #568A7D;
+}
+
+.doc-loader .loader {
+    border-radius: 50%;
 }
 
 .doc-loader td 
@@ -93,7 +97,7 @@ input, textarea, select
     position: relative;
     text-align: center;
     z-index: 1;
-    color: #3b455b;
+    color: rgba(255, 255, 255, 0.60);
     font-weight: 700;
 }
 
@@ -173,6 +177,12 @@ input, textarea, select
     z-index: 1;
 }
 
+.header-logo .logo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
 .header-holder .fa-search
 {
     color: white;
@@ -191,7 +201,7 @@ input, textarea, select
     position: fixed;
     width: 100%;
     height: 100% !important;
-    background-color: rgba(31,37,49,0.98);
+    background-color: #568A7D;
     top: 0;
     left: 0;
     text-align: center;
@@ -395,7 +405,7 @@ ul.slides li img
 
 .blog-top-content-holder
 {
-    background-color: #2b3344;
+    background-color: #568A7D;
     min-height: 100%;          
 }
 
@@ -411,8 +421,14 @@ ul.slides li img
 {
     font-size: 56px;
     line-height: 60px;   
-    margin-bottom: 40px;    
+    padding: 0;
 }
+
+.blog-top-content-holder h6.entry-tagline
+{
+    padding-top: 5px;
+}
+
 
 .blog-top-content-holder p.site-description
 {
@@ -420,6 +436,7 @@ ul.slides li img
     line-height: 35px;
     max-width: 870px;
     margin: 0 auto;   
+    padding-top: 40px;
 }
 
 .blog-top-content
@@ -454,7 +471,7 @@ ul.slides li img
 .blog-item-holder .entry-content:before
 {
     content: "";
-    background: #343451;
+    background: #568A7D;
     top: 0;
     left: 0;
     width: 100%;
