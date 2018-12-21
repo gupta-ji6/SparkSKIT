@@ -1,3 +1,11 @@
+:root {
+    /* --theme-color: #568A7D; */
+    --theme-color: #FF4B2B;
+    --serif-font: 'Roboto Slab', serif;
+    --sans-serif-font: 'Roboto', sans-serif;
+    --cursive-font: 'Dancing Script', cursive;
+  }
+
 html
 {
     height: 100%;
@@ -6,11 +14,11 @@ html
 
 body
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: var(--sans-serif-font);
     font-size: 20px; 	
     line-height: 35px;
     font-weight: 400;	
-    color: #568A7D;
+    color: var(--theme-color);
     height: 100%;
 }
 
@@ -38,7 +46,7 @@ input, textarea, select
     width: 100%;
     height: 100%;
     z-index: 99999;	
-    background-color: #568A7D;
+    background-color: var(--theme-color);
 }
 
 .doc-loader .loader {
@@ -131,26 +139,26 @@ input, textarea, select
 
 .search-field::-webkit-input-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: var(--sans-serif-font-);
     color: #757B88;
     font-weight: 700;
 }
 .search-field::-moz-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: var(--sans-serif-font-);
     color: #757B88;
     font-weight: 700;
     opacity: 1;
 }
 .search-field:-ms-input-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: var(--sans-serif-font-);
     color: #757B88;
     font-weight: 700;
 }
 .search-field:-moz-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: var(--sans-serif-font-);
     color: #757B88  ;
     font-weight: 700;
     opacity: 1;
@@ -201,7 +209,7 @@ input, textarea, select
     position: fixed;
     width: 100%;
     height: 100% !important;
-    background-color: #568A7D;
+    background-color: var(--theme-color);
     top: 0;
     left: 0;
     text-align: center;
@@ -385,17 +393,30 @@ ul.slides li img
 
 #post-2
 {
-    background-image: url("demo-images/one_drop_home_image02.jpg");
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 #post-3
 {
-    background-image: url("demo-images/one_drop_home_image03.jpg");
+    /* instagram */
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
 }
 
-#post-5
+#post-4
 {
-    background-image: url("demo-images/one_drop_home_image04.jpg");
+    /* facebook */
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 #post-6
@@ -405,7 +426,11 @@ ul.slides li img
 
 .blog-top-content-holder
 {
-    background-color: #568A7D;
+    /* background-color: var(--theme-color); */
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     min-height: 100%;          
 }
 
@@ -419,24 +444,29 @@ ul.slides li img
 
 .blog-top-content-holder h1.entry-title
 {
-    font-size: 56px;
+    font-size: 76px !important;
     line-height: 60px;   
     padding: 0;
+    font-family: var(--serif-font);
 }
 
 .blog-top-content-holder h6.entry-tagline
 {
     padding-top: 5px;
+    font-family: var(--cursive-font);
+    font-weight: 200;
 }
 
 
 .blog-top-content-holder p.site-description
 {
-    font-size: 26px;
+    font-size: 30px;
     line-height: 35px;
-    max-width: 870px;
+    max-width: 1000px;
     margin: 0 auto;   
     padding-top: 40px;
+    font-family: var(--serif-font);
+    font-weight: bolder;
 }
 
 .blog-top-content
@@ -465,13 +495,13 @@ ul.slides li img
 
 .blog-item-holder.no-background-image
 {
-    background-color: #568A7D;
+    background-color: var(--theme-color);
 }
 
 .blog-item-holder .entry-content:before
 {
     content: "";
-    background: #568A7D;
+    background: var(--theme-color);
     top: 0;
     left: 0;
     width: 100%;
@@ -488,6 +518,15 @@ ul.slides li img
     padding-top: 17%;
     padding-bottom: 200px;
     position: relative;
+    font-family: var(--serif-font);
+    font-size: 40px;
+}
+
+.blog-item-holder .entry-content .content-1170 h2
+{
+    font-family: var(--serif-font);
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
 .blog-item-holder .entry-content .cat-links
@@ -631,7 +670,7 @@ ul.slides li img
 {
     display: inline-block;
     width: 48%;
-    float: left;   
+    /* float: left;    */
     padding: 140px 0px;
     text-align: right;
     padding-right: 2%;    
@@ -649,7 +688,7 @@ ul.slides li img
     background-color: #2a2e41;
     display: inline-block;
     width: 48%;    
-    float: right;
+    /* float: right; */
     padding: 140px 0px;
     padding-left: 2%;
     font-size: 40px;
@@ -1308,7 +1347,7 @@ div.pp_default .pp_loaderIcon
     margin: 30px 0;
     height: 28px;
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: var(--sans-serif-font-);
     width: 100%;
     line-height: 25px;
     text-transform: uppercase;
@@ -1336,7 +1375,7 @@ div.pp_default .pp_loaderIcon
     vertical-align: middle;
     text-decoration: none;
     background: transparent;
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: var(--sans-serif-font-);
     font-weight: 700;
     width: 100%;
     text-transform: uppercase;
@@ -1345,7 +1384,7 @@ div.pp_default .pp_loaderIcon
 
 .contact-form input[type=text]::-webkit-input-placeholder, .contact-form input[type=email]::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: var(--sans-serif-font-);
     color: #191919;
     font-weight: 700;
     font-size: 20px;
@@ -1353,7 +1392,7 @@ div.pp_default .pp_loaderIcon
 }
 .contact-form input[type=text]::-moz-placeholder, .contact-form input[type=email]::-moz-placeholder, .contact-form textarea::-moz-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: var(--sans-serif-font-);
     color: #191919;
     font-weight: 700;
     font-size: 20px;
@@ -1362,7 +1401,7 @@ div.pp_default .pp_loaderIcon
 }
 .contact-form input[type=text]:-ms-input-placeholder, .contact-form input[type=email]:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: var(--sans-serif-font-);
     color: #191919;
     font-weight: 700;
     font-size: 20px;
@@ -1370,7 +1409,7 @@ div.pp_default .pp_loaderIcon
 }
 .contact-form input[type=text]:-moz-placeholder, .contact-form input[type=email]:-moz-placeholder, .contact-form textarea:-moz-placeholder
 {
-    font-family: 'Montserrat', sans-serif, Arial;
+    font-family: var(--sans-serif-font-);
     color: #191919;
     font-weight: 700;
     font-size: 20px;
@@ -1948,6 +1987,8 @@ li.right-footer-contnet a:first-child
     {
         font-size: 31px;
         line-height: 33px;
+        font-family: var(--serif-font) !important;
+        font-weight: bold;
     }
 
     .single-post h1.entry-title 
