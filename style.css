@@ -10,6 +10,7 @@ html
 {
     height: 100%;
     overflow: hidden;
+    /* scroll-behavior: smooth; */
 }
 
 body
@@ -452,7 +453,7 @@ ul.slides li img
 
 .blog-top-content-holder h6.entry-tagline
 {
-    padding-top: 5px;
+    padding-top: 20px;
     font-family: var(--cursive-font);
     font-weight: 200;
 }
@@ -527,6 +528,7 @@ ul.slides li img
     font-family: var(--serif-font);
     font-size: 50px;
     margin-bottom: 20px;
+    line-height: 1; 
 }
 
 .blog-item-holder .entry-content .cat-links
@@ -659,6 +661,18 @@ ul.slides li img
         -webkit-transform: translateY(35px);
         transform: translateY(35px);
     }
+}
+
+.one_half {
+    color: black;
+}
+
+.black-color {
+    color: black;
+}
+
+.black-color li {
+    color: black;
 }
 
 .page-pagination-holder
@@ -1064,6 +1078,7 @@ div.pp_default .pp_loaderIcon
 {
     font-size: 20px;
     line-height: 35px;
+    color: black;
 }
 
 .logo-holder
