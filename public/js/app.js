@@ -21,7 +21,7 @@ particlesJS('particles-js',
         "nb_sides": 4
       },
       "image": {
-        "src": "/images/whitesparkle128.png",
+        "src": "images/whitesparkle128.png",
         "width": 512,
         "height": 512,
       }
